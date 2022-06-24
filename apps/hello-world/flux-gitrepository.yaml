@@ -4,5 +4,5 @@ metadata:
   name: kaizen
   namespace: flux-system
 spec:
-  interval: 1m0s
-  url: https://github.com/kaizentm/gitops-manifests/
+  ref:
+    dev
