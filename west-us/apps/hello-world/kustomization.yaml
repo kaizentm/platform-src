@@ -1,3 +1,13 @@
+# This kustomization file cann be generated "on-the-fly" by the "transformation flow"
+# There is no need to keep it in the repo
+# The folder structure could be standartized in this case like
+#   hello-world/
+#      configs/
+#        configmap.yaml
+#      overlays
+#        flux-gitrepository.yaml
+# whatever is "configs" goes under "resources" and all from "overlays" goes under "patchesStrategicMerge"
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
@@ -5,7 +15,7 @@ bases:
 
 resources:
   - configmap.yaml
-  
+
 patchesStrategicMerge:
   - flux-gitrepository.yaml
   
