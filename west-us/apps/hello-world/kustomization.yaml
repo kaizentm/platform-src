@@ -1,4 +1,4 @@
-# This kustomization file cann be generated "on-the-fly" by the "transformation flow"
+# This kustomization file can be generated "on-the-fly" by the "transformation flow"
 # There is no need to keep it in the repo
 # The folder structure could be standartized in this case like
 #   hello-world/
